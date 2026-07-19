@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern engineering student portfolio showcasing projects, technical skills, experience, and contact information."
+    />
+    <title>Engineering Student Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <nav class="nav" aria-label="Main navigation">
+          <a class="brand" href="#top" aria-label="Portfolio home">
+            <span class="brand-mark">ES</span>
+            <span>Engineering Portfolio</span>
+          </a>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a href="#work">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a class="nav-cta" href="#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section-pad">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Engineering student • Problem solver • Builder</p>
+            <h1>Designing clean systems that turn complex ideas into reliable products.</h1>
+            <p class="hero-text">
+              I am an engineering student focused on practical software, data-driven decisions,
+              and thoughtful user experiences. This portfolio is built to show employers how I
+              think, prototype, test, and communicate technical work.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#work">View Projects</a>
+              <a class="button secondary" href="mailto:your.email@example.com">Email Me</a>
+            </div>
+          </div>
+          <aside class="hero-card reveal" aria-label="Engineering profile highlights">
+            <div class="orb"></div>
+            <p class="card-label">Current focus</p>
+            <h2>Systems + Software Engineering</h2>
+            <div class="metric-grid">
+              <div><strong>12+</strong><span>Lab builds</span></div>
+              <div><strong>8</strong><span>Core tools</span></div>
+              <div><strong>4</strong><span>Project areas</span></div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section-pad" id="work">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Selected work</p>
+            <h2>Engineering projects with measurable outcomes.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <span class="project-tag">Data + DBMS</span>
+              <h3>Student Performance Analytics</h3>
+              <p>Designed a normalized SQL schema and dashboard-ready queries to identify trends in coursework, attendance, and outcomes.</p>
+              <ul><li>SQL</li><li>ER modeling</li><li>Reporting</li></ul>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-tag">Automation</span>
+              <h3>Smart Lab Inventory</h3>
+              <p>Built a lightweight tracking concept for components, tools, and issue logs so teams can reduce search time and stock errors.</p>
+              <ul><li>Workflow design</li><li>Prototyping</li><li>UX</li></ul>
+            </article>
+            <article class="project-card reveal">
+              <span class="project-tag">Web</span>
+              <h3>Responsive Portfolio System</h3>
+              <p>Created this fast static site with accessible navigation, animated sections, and a clean technical visual language.</p>
+              <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="split section-pad" id="skills">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Technical foundation</p>
+            <h2>Clear strengths for engineering teams.</h2>
+          </div>
+          <div class="skills-panel reveal">
+            <span>SQL & Database Design</span><span>Python / C / Java Basics</span><span>Data Structures</span><span>System Design Thinking</span><span>Git & Documentation</span><span>UI / UX Prototyping</span><span>Testing Mindset</span><span>Presentation Skills</span>
+          </div>
+        </section>
+
+        <section class="section-pad" id="experience">
+          <div class="timeline reveal">
+            <div>
+              <p class="eyebrow">Experience</p>
+              <h2>Built around learning, iteration, and impact.</h2>
+            </div>
+            <div class="timeline-items">
+              <article><span>2026</span><h3>Engineering Student</h3><p>Studying core engineering concepts while building software and database projects that solve practical problems.</p></article>
+              <article><span>2025</span><h3>Project Collaborator</h3><p>Worked in student teams to define requirements, divide technical tasks, and present results clearly.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact section-pad reveal" id="contact">
+          <p class="eyebrow">Let’s connect</p>
+          <h2>Open to internships, engineering projects, and technical collaborations.</h2>
+          <p>Replace the placeholder links with your email, GitHub, LinkedIn, and resume before deploying.</p>
+          <div class="contact-links">
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://github.com/your-username">GitHub</a>
+            <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+            <a href="#">Resume</a>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
