@@ -26,3 +26,25 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
+
+
+const focusCard = document.querySelector('.hero-card');
+const focusOrb = document.querySelector('.orb');
+
+if (focusCard && focusOrb) {
+  const moveOrb = (event) => {
+    const cardBounds = focusCard.getBoundingClientRect();
+    const x = event.clientX - cardBounds.left;
+    const y = event.clientY - cardBounds.top;
+
+    focusOrb.style.setProperty('--orb-x', `${x}px`);
+    focusOrb.style.setProperty('--orb-y', `${y}px`);
+  };
+
+  focusCard.addEventListener('pointermove', moveOrb);
+
+  focusCard.addEventListener('pointerleave', () => {
+    focusOrb.style.removeProperty('--orb-x');
+    focusOrb.style.removeProperty('--orb-y');
+  });
+}
